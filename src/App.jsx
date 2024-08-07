@@ -19,7 +19,7 @@ function App() {
       "A simple counter app to increment/decrement built with React.js shows the usecase of useState hook.",
     link: "https://counterapp-one-lac.vercel.app/",
     image:
-      "https://cdn6.aptoide.com/imgs/4/0/d/40da1d8253999be584e7ee2c89249326_icon.png",
+      "https://www.ifixproblem.com/wp-content/uploads/2023/02/Counter-app.png",
   };
 
   let secondproject = {
@@ -28,7 +28,7 @@ function App() {
       "A simple background color changer app built with React.js shows the usecase of useState hook.",
     link: "https://background-changer-one-psi.vercel.app/",
     image:
-      "https://reactjsexample.com/content/images/2017/03/Color-Changer-ReactJS.gif",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNaVf4qVb9kLkidixdBTXtzsYc9EFg0mbmSL6HzvWi84rPmgmNFKNYl5PxED5ivXanRY&usqp=CAU",
   };
 
   let thirdproject = {
@@ -36,8 +36,16 @@ function App() {
     description:
       "Shows the usecase of useState, useCallback, useEffect, and useRef hooks.",
     link: "https://passwordgenerator-six-psi.vercel.app/",
-    image: "https://play-lh.googleusercontent.com/1_Yqavw9mMbBwp42yl88chb2pXYa2IM-rzV34yOkP6onPlMTcEJl2Zp-_HNYyxV14A-w",
+    image: "https://www.scaler.com/topics/images/password-generator-cpp-thumbnail.webp",
   };
+
+  let fourthproject = {
+    name: "Currency Converter",
+    description:
+      "A currency converter app built with React.js using custom hook and external API.",
+    link: "https://currencyconverter-green-kappa.vercel.app/",
+    image: "https://www.shutterstock.com/image-vector/currency-exchange-money-conversion-euro-600nw-2169800853.jpg",
+  }
 
   return (
     <>
@@ -54,6 +62,7 @@ function App() {
         <Card project={firstproject} />
         <Card project={secondproject} />
         <Card project={thirdproject} />
+        <Card project={fourthproject} />
       </div>
 
       <div className="pt-16">
