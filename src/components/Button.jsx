@@ -6,7 +6,8 @@ const Button = ({text}) => {
     <button
     onClick={() => window.open(text.link, "_blank")}
   type="button"
-  className="inline-flex items-center rounded-md bg-black px-3 py-2 text-sm font-semibold text-white hover:bg-black/80"
+  className="inline-flex items-center rounded-2xl border px-3 py-2 text-sm font-semibold hover:bg-black/20"
+  style={{borderColor: "rgb(117, 194, 217)", color: "rgb(117, 194, 217)"}}
 >
   {text.name}
   <svg

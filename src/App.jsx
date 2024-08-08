@@ -52,7 +52,7 @@ function App() {
       <div className="pb-8 w-full">
         <h1 className="text-5xl pt-16">
           Learn{" "}
-          <span id="reactname" className="text-sky-500">
+          <span id="reactname" style={{ color: "rgb(117, 194, 217)" }}>
             React.js
           </span>{" "}
           by building projects.
