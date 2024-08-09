@@ -47,6 +47,14 @@ function App() {
     image: "https://www.shutterstock.com/image-vector/currency-exchange-money-conversion-euro-600nw-2169800853.jpg",
   }
 
+  let fifthproject = {
+    name: "SIP Return calculator",
+    description:
+      "An SIP returns (₹) calculator app built with React.js using various hooks (useState, useEffect, useCallback).",
+    link: "https://sipreturncalc.vercel.app/",
+    image: "https://www.smallcase.com/wp-content/uploads/2023/07/lumpsum-calculator-1.png",
+  }
+
   return (
     <>
       <div className="pb-8 w-full">
@@ -63,6 +71,7 @@ function App() {
         <Card project={secondproject} />
         <Card project={thirdproject} />
         <Card project={fourthproject} />
+        <Card project={fifthproject} />
       </div>
 
       <div className="pt-16">
