@@ -9,7 +9,7 @@ const Card = ({ project }) => {
         className="h-[200px] w-full rounded-t-xl object-cover"
       />
       <div className="p-4">
-        <h1 className="inline-flex items-center text-lg font-semibold">
+        <h1 className="inline-flex items-center text-lg font-semibold text-sky-200">
           {project.name}{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
