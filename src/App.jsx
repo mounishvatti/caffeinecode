@@ -16,8 +16,9 @@ function App() {
   let firstproject = {
     name: "Counter App",
     description:
-      "A simple counter app to increment/decrement built with React.js shows the usecase of useState hook.",
-    link: "https://counterapp-one-lac.vercel.app/",
+      "A counter app to increment/decrement built with React.js shows the usecase of useState hook.",
+    demolink: "https://counterapp-one-lac.vercel.app/",
+    repolink: "https://github.com/mounishvatti/LearningReact/blob/main/myapp/src/App.jsx",
     image:
       "https://www.ifixproblem.com/wp-content/uploads/2023/02/Counter-app.png",
   };
@@ -25,8 +26,9 @@ function App() {
   let secondproject = {
     name: "Background Color Changer",
     description:
-      "A simple background color changer app built with React.js shows the usecase of useState hook.",
-    link: "https://background-changer-one-psi.vercel.app/",
+      "A background color changer app built with React.js shows the usecase of useState hook.",
+    demolink: "https://background-changer-one-psi.vercel.app/",
+    repolink: "https://github.com/mounishvatti/LearningReact/blob/main/projects/bgchanger/src/App.jsx",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNaVf4qVb9kLkidixdBTXtzsYc9EFg0mbmSL6HzvWi84rPmgmNFKNYl5PxED5ivXanRY&usqp=CAU",
   };
@@ -35,7 +37,8 @@ function App() {
     name: "Password generator",
     description:
       "Shows the usecase of useState, useCallback, useEffect, and useRef hooks.",
-    link: "https://passwordgenerator-six-psi.vercel.app/",
+    demolink: "https://passwordgenerator-six-psi.vercel.app/",
+    repolink: "https://github.com/mounishvatti/LearningReact/tree/main/projects/pwdgenerator",
     image: "https://www.scaler.com/topics/images/password-generator-cpp-thumbnail.webp",
   };
 
@@ -43,7 +46,8 @@ function App() {
     name: "Currency Converter",
     description:
       "A currency converter app built with React.js using custom hook and external API.",
-    link: "https://currencyconverter-green-kappa.vercel.app/",
+    demolink: "https://currencyconverter-green-kappa.vercel.app/",
+    repolink: "https://github.com/mounishvatti/currencyconverter",
     image: "https://www.shutterstock.com/image-vector/currency-exchange-money-conversion-euro-600nw-2169800853.jpg",
   }
 
@@ -51,8 +55,18 @@ function App() {
     name: "SIP Return calculator",
     description:
       "An SIP returns (₹) calculator app built with React.js using various hooks (useState, useEffect, useCallback).",
-    link: "https://sipreturncalc.vercel.app/",
+    demolink: "https://sipreturncalc.vercel.app/",
+    repolink: "https://github.com/mounishvatti/sipreturncalc",
     image: "https://www.smallcase.com/wp-content/uploads/2023/07/lumpsum-calculator-1.png",
+  }
+
+  let sixthproject = {
+    name: "React Router",
+    description:
+      "Using React Router Dom to navigate between different pages from the address bar.",
+    demolink: "https://reactrouter-sigma.vercel.app/",
+    repolink: "https://github.com/mounishvatti/reactrouter",
+    image: "https://miro.medium.com/v2/resize:fit:719/1*1oP_IQI1jHei58EV-V5y8A.png",
   }
 
   return (
@@ -72,6 +86,7 @@ function App() {
         <Card project={thirdproject} />
         <Card project={fourthproject} />
         <Card project={fifthproject} />
+        <Card project={sixthproject} />
       </div>
 
       <div className="pt-16">
