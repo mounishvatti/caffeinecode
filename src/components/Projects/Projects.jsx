@@ -87,9 +87,9 @@ function Projects() {
             />
             <button
               type="button"
-              className="rounded-md bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="rounded-md bg-pink-800 px-3 py-2 text-sm font-semibold text-white/80 shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
-              Search
+              search
             </button>
           </div>
         </div>

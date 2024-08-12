@@ -54,7 +54,7 @@ function About() {
     <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
       <div className="space-y-6">
         <p className="text-sm font-semibold md:text-base">Join our team →</p>
-        <p className="text-3xl font-bold md:text-4xl text-sky-200">
+        <p className="text-3xl font-bold md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-pink-400">
           We&#x27;re just getting started
         </p>
         <p className="text-base text-gray-300 md:text-lg">
@@ -63,7 +63,7 @@ function About() {
         </p>
         <button
           type="button"
-          className="rounded-md bg-sky-400 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          className="rounded-md bg-white/90 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           Join Now
         </button>
