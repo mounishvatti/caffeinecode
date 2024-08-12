@@ -4,7 +4,7 @@ const Card = ({ project }) => {
   return (
     <div
       className="w-[300px] rounded-xl"
-      style={{ backgroundColor: "rgb(20, 20, 20)" }}
+      style={{ backgroundColor: "rgb(25, 25, 25)" }}
     >
       <img
         src={project.image}

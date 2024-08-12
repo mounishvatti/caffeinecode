@@ -6,9 +6,9 @@ function Home() {
     const codeBlock = document.getElementById('codeBlock').value;
     navigator.clipboard.writeText(codeBlock).then(() => {
       const cpbtn = document.getElementById('copyButton');
-      cpbtn.innerHTML = 'Copied!';
+      cpbtn.innerHTML = 'copied!';
       setTimeout(() => {
-        cpbtn.innerHTML = 'Copy';
+        cpbtn.innerHTML = 'copy';
       }, 2000);
     }).catch(err => {
       console.error('Failed to copy text: ', err);
@@ -48,7 +48,7 @@ function Home() {
                   class="rounded-md bg-sky-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   onClick={copyToClipboard}
                 >
-                  Copy
+                  copy
                 </button>
               </div>
             </div>
