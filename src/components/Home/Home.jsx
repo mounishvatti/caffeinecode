@@ -75,7 +75,7 @@ function Home() {
                 Projects and many more
               </p>
               <h2 className="mt-6 text-4xl font-bold leading-tight text-white/80">
-                The best place to learn{" "}
+                The best way to learn{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                   React.js
                 </span>
