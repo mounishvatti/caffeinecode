@@ -22,7 +22,7 @@ function Footer() {
                       fill="black"
                     ></path>
                   </svg>
-                  <span className="ml-4 text-lg text-black font-bold">Caffeine Code</span>
+                  <span className="ml-4 text-lg text-black font-bold">CaffeineCode</span>
                 </div>
               </a>
             </div>

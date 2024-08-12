@@ -39,7 +39,7 @@ function About() {
     <div className="grid grid-cols-1 gap-4 gap-y-6 border-none py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
       <div className="rounded-xl">
         <img
-          src="/src/assets/images/mounishvatti.png"
+          src="https://i.pinimg.com/originals/36/f9/d9/36f9d946e73de52ff356d802e1ad5c51.jpg"
           alt="Mounish Vatti"
           className="h-[300px] w-full rounded-2xl object-cover "
         />
