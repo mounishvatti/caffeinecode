@@ -1,7 +1,25 @@
-[![](https://skillicons.dev/icons?i=react,tailwind)](https://skillicons.dev) 
+<div align="center">
 
-# React Projects Collection
+[![](https://skillicons.dev/icons?i=vite,react,tailwind)](https://skillicons.dev) 
 
-Welcome to my collection of React.js projects! This repository contains various small to medium-sized projects that I have built while learning and experimenting with React.js. Each project showcases different concepts and hooks in React, providing practical examples of their usage.
+</div>
 
-## Happy coding! 😊
+![alt text](image.png)
+
+## Vite + React
+```bash
+$ git clone https://github.com/mounishvatti/caffeinecode.git
+```
+```bash
+$ cd caffeinecode
+npm install
+npm run dev
+```
+
+## Install TailwindCSS
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+`Documentation` - https://tailwindcss.com/docs/guides/vite
