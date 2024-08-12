@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="pt-5 pb-5 relative w-full" style={{ backgroundColor: "rgb(18, 18, 18)" }}>
+    <div
+      className="pt-5 pb-5 relative w-full"
+      style={{ backgroundColor: "rgb(18, 18, 18)" }}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
@@ -20,11 +26,13 @@ function Navbar() {
               ></path>
             </svg>
           </span>
-          <span className="font-semibold text-lg font-sans"><Link to="/">CaffeineCode</Link></span>
+          <span className="font-semibold text-lg font-sans">
+            <Link to="/">CaffeineCode</Link>
+          </span>
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
-          <li>
+            <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -49,7 +57,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-            <NavLink
+              <NavLink
                 to="/projects"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
@@ -66,7 +74,12 @@ function Navbar() {
           <button
             type="button"
             className="rounded-md bg-black/80 px-3 py-2 text-sm font-semibold text-white/80 shadow-sm hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black border border-white/60"
-            onClick={()=>{window.open("https://github.com/mounishvatti/caffeinecode","_blank")}}
+            onClick={() => {
+              window.open(
+                "https://github.com/mounishvatti/caffeinecode",
+                "_blank"
+              );
+            }}
           >
             Star on GitHub
           </button>
@@ -83,6 +96,7 @@ function Navbar() {
             stroke-linecap="round"
             stroke-linejoin="round"
             className="h-6 w-6 cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <line x1="4" y1="12" x2="20" y2="12"></line>
             <line x1="4" y1="6" x2="20" y2="6"></line>
@@ -90,6 +104,66 @@ function Navbar() {
           </svg>
         </div>
       </div>
+      {isMenuOpen && (
+        <div className="lg:hidden px-4 py-2 bg-black/10 text-end">
+          <ul className="space-y-4">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `block py-2 pr-4 pl-3 duration-200 ${
+                    isActive ? "text-sky-300" : "text-white/70"
+                  } hover:bg-gray-700 hover:text-sky-300 font-sans`
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `block py-2 pr-4 pl-3 duration-200 ${
+                    isActive ? "text-sky-300" : "text-white/70"
+                  } hover:bg-gray-700 hover:text-sky-300 font-sans`
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  `block py-2 pr-4 pl-3 duration-200 ${
+                    isActive ? "text-sky-300" : "text-white/70"
+                  } hover:bg-gray-700 hover:text-sky-300 font-sans`
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <button
+                type="button"
+                className="text-left py-2 pr-4 pl-3 bg-white duration-200 text-black/70 hover:bg-white/70 hover:text-black font-sans font-semibold rounded-xl"
+                onClick={() => {
+                  window.open(
+                    "https://github.com/mounishvatti/caffeinecode",
+                    "_blank"
+                  );
+                  setIsMenuOpen(false);
+                }}
+              >
+                Star on GitHub
+              </button>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

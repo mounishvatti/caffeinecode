@@ -69,8 +69,8 @@ function Projects() {
   return (
     <>
       <div>
-        <div className="flex justify-center items-center pb-8 w-full">
-          <h1 className="text-5xl font-bold pt-16">
+        <div className="flex justify-center pb-8 w-full">
+          <h1 className="text-5xl font-bold pt-16 text-center">
             Learn{" "}
             <span id="reactname" style={{ color: "rgb(117, 194, 217)" }}>
               React.js
