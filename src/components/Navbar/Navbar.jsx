@@ -60,6 +60,18 @@ function Navbar() {
             </li>
             <li>
               <NavLink
+                to="/blogs"
+                className={({ isActive }) =>
+                  `block py-2 pr-4 pl-3 duration-200 ${
+                    isActive ? "text-purple-300" : "text-white/70"
+                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-300 lg:p-0 font-sans`
+                }
+              >
+                Blogs
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/projects"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
@@ -133,6 +145,19 @@ function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/blogs"
+                className={({ isActive }) =>
+                  `block py-2 pr-4 pl-3 duration-200 ${
+                    isActive ? "text-purple-300" : "text-white/70"
+                  } hover:bg-black/50 hover:text-purple-300 font-sans`
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blogs
               </NavLink>
             </li>
             <li>
