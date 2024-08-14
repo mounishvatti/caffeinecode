@@ -1,14 +1,17 @@
-import React from "react";
-import { useState } from "react";
+//import React from "react";
+import { useState, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { MdOutlineDarkMode } from "react-icons/md";
+import useTheme from "/src/contexts/theme";
+import ThemeButton from "../ThemeButton/ThemeButton";
+
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div
-      className="pt-5 pb-5 relative w-full"
-      style={{ backgroundColor: "rgb(18, 18, 18)" }}
+      className="pt-5 pb-5 relative w-full bg-white dark:bg-black"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
@@ -27,7 +30,7 @@ function Navbar() {
             </svg>
           </span>
           <span className="font-semibold text-lg font-sans">
-            <Link to="/" className="bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-pink-400">
+            <Link to="/" className="bg-clip-text text-transparent  bg-gradient-to-r from-purple-700 to-pink-700 dark:from-purple-200 dark:to-pink-400">
               CaffeineCode
             </Link>
           </span>
@@ -39,8 +42,8 @@ function Navbar() {
                 to="/"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-purple-300" : "text-white/70"
-                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-300 lg:p-0 font-sans`
+                    isActive ? "text-purple-900 dark:text-purple-300" : "text-black/60 dark:text-white/70"
+                  } border-b dark:border-gray-100 dark:hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-800 lg:p-0 font-sans`
                 }
               >
                 Home
@@ -51,8 +54,8 @@ function Navbar() {
                 to="/about"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-purple-300" : "text-white/70"
-                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-300 lg:p-0 font-sans`
+                    isActive ? "text-purple-900 dark:text-purple-300" : "text-black/60 dark:text-white/70"
+                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-800 lg:p-0 font-sans`
                 }
               >
                 About
@@ -63,8 +66,8 @@ function Navbar() {
                 to="/blogs"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-purple-300" : "text-white/70"
-                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-300 lg:p-0 font-sans`
+                    isActive ? "text-purple-900 dark:text-purple-300" : "text-black/60 dark:text-white/70"
+                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-800 lg:p-0 font-sans`
                 }
               >
                 Blogs
@@ -75,8 +78,8 @@ function Navbar() {
                 to="/projects"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-purple-300" : "text-white/70"
-                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-300 lg:p-0 font-sans`
+                    isActive ? "text-purple-900 dark:text-purple-300" : "text-black/60 dark:text-white/70"
+                  } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-purple-800 lg:p-0 font-sans`
                 }
               >
                 Projects
@@ -87,7 +90,7 @@ function Navbar() {
         <div className="hidden lg:block">
           <button
             type="button"
-            className="rounded-md bg-gradient-to-r from-purple-700 to-pink-900 px-3 py-2 text-sm font-semibold text-white/90 shadow-sm hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="rounded-md px-3 py-2 border border-black/50 dark:border-white/30 text-sm font-semibold text-black/60 dark:text-white/80 shadow-sm hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             onClick={() => {
               window.open(
                 "https://github.com/mounishvatti/caffeinecode",
@@ -97,6 +100,9 @@ function Navbar() {
           >
             Star on GitHub
           </button>
+        </div>
+        <div className="hidden lg:block">
+            <ThemeButton />
         </div>
         <div className="lg:hidden">
           <svg
