@@ -66,6 +66,16 @@ function Projects() {
       "https://miro.medium.com/v2/resize:fit:719/1*1oP_IQI1jHei58EV-V5y8A.png",
   };
 
+  let seventhproject = {
+    name: "To-do List App",
+    description:
+      "A to-do list app built with React.js shows the usecase of context API and broswer's local storage.",
+    demolink: "https://todoapp-nu-nine-84.vercel.app/",
+    repolink:
+      "https://github.com/mounishvatti/todoapp",
+    image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
+  };
+
   return (
     <>
       <div className="dark:bg-black/95">
@@ -114,6 +124,9 @@ function Projects() {
             <div>
               <Card project={sixthproject} />
             </div>
+            <div>
+              <Card project={seventhproject} />
+            </div> 
           </div>
         </div>
       </div>
