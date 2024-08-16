@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "/src/components/Card.jsx";
+import { FaSearch } from "react-icons/fa";
 import Button from "/src/components/Button.jsx";
 
 function Projects() {
@@ -67,7 +68,7 @@ function Projects() {
   };
 
   let seventhproject = {
-    name: "To-do List App",
+    name: "To-do App (context-API)",
     description:
       "A to-do list app built with React.js shows the usecase of context API and broswer's local storage.",
     demolink: "https://todoapp-nu-nine-84.vercel.app/",
@@ -75,6 +76,16 @@ function Projects() {
       "https://github.com/mounishvatti/todoapp",
     image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
   };
+
+  let eighthproject = {
+    name: "To-do App (react-redux)",
+    description:
+      "A to-do list app built with React.js shows the usecase of Redux, react-redux, and redux-toolkit.",
+    demolink: "",
+    repolink:
+      "https://github.com/mounishvatti/reduxtoolkittodoapp",
+    image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
+  }
 
   return (
     <>
@@ -97,9 +108,9 @@ function Projects() {
             />
             <button
               type="button"
-              className="rounded-md bg-pink-800 px-3 py-2 text-sm font-semibold text-white/90 shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="rounded-md bg-pink-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
-              search
+              <FaSearch />
             </button>
           </div>
         </div>
@@ -127,6 +138,9 @@ function Projects() {
             <div>
               <Card project={seventhproject} />
             </div> 
+            <div>
+              <Card project={eighthproject} />
+            </div>
           </div>
         </div>
       </div>
