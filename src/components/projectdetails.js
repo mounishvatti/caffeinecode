@@ -94,7 +94,7 @@ let projects = [
         id: 9,
         name: "Blogging website",
         description:
-            "A Blogging website built with React.js and appwrite as a backend, shows the usecase of Redux, react-redux, and redux-toolkit.",
+            "A Blogging website built with React.js and appwrite, shows the usecase of Redux, react-redux, and redux-toolkit.",
         tags: ["react", "redux", "appwrite"],
         demolink: "blogscafe.vercel.app",
         repolink:
