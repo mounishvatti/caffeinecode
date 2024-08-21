@@ -1,9 +1,12 @@
 import React from "react";
 import Card from "/src/components/Card.jsx";
 import { FaSearch } from "react-icons/fa";
+import projects from "/src/components/projectdetails.js";
 import Button from "/src/components/Button.jsx";
 
 function Projects() {
+  let projectscontent = projects;
+  console.log(projectscontent);
   let firstproject = {
     name: "Counter App",
     description:
@@ -62,6 +65,7 @@ function Projects() {
     description:
       "Using React Router Dom to navigate between different pages from the address bar.",
     demolink: "https://reactrouter-sigma.vercel.app/",
+    tags: ["react", "react-router-dom"],
     repolink: "https://github.com/mounishvatti/reactrouter",
     image:
       "https://miro.medium.com/v2/resize:fit:719/1*1oP_IQI1jHei58EV-V5y8A.png",
@@ -72,6 +76,7 @@ function Projects() {
     description:
       "A to-do list app built with React.js shows the usecase of context API and broswer's local storage.",
     demolink: "https://todoapp-nu-nine-84.vercel.app/",
+    tags: ["react", "context-api", "local-storage"],
     repolink:
       "https://github.com/mounishvatti/todoapp",
     image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
@@ -82,9 +87,21 @@ function Projects() {
     description:
       "A to-do list app built with React.js shows the usecase of Redux, react-redux, and redux-toolkit.",
     demolink: "",
+    tags: ["react", "redux", "redux-toolkit"],
     repolink:
       "https://github.com/mounishvatti/reduxtoolkittodoapp",
     image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
+  }
+
+  let ninthproject = {
+    name: "Blogging website",
+    description:
+      "A Blogging website built with React.js and appwrite as a backend, used tinyMCE for rich text editor.",
+    demolink: "blogscafe.vercel.app",
+    tags: ["react", "redux", "appwrite"],
+    repolink:
+      "https://github.com/mounishvatti/blogscafe",
+    image: "https://c7edd99d51e0e6080d067050a03dc2c3.cdn.bubble.io/f1688736280400x613270418449146200/Illustration2.svg"
   }
 
   return (
@@ -140,6 +157,9 @@ function Projects() {
             </div> 
             <div>
               <Card project={eighthproject} />
+            </div>
+            <div>
+              <Card project={ninthproject} />
             </div>
           </div>
         </div>
