@@ -6,7 +6,7 @@ import Button from "/src/components/Button.jsx";
 
 function Projects() {
   let projectscontent = projects;
-  console.log(projectscontent);
+  //console.log(projectscontent);
   let firstproject = {
     name: "Counter App",
     description:
