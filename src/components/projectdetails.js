@@ -88,7 +88,7 @@ let projects = [
         demolink: "",
         repolink:
             "https://github.com/mounishvatti/reduxtoolkittodoapp",
-        image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
+        image: "https://play-lh.googleusercontent.com/JkYolPNuRAlrXEI9vlk-XOid3VFJ0IPjDj2eM_xrriuE3Zu8IX9cuMkI7JOTw1upNxbW"
     },
     {
         id: 9,
@@ -99,7 +99,7 @@ let projects = [
         demolink: "blogscafe.vercel.app",
         repolink:
             "https://github.com/mounishvatti/blogscafe",
-        image: "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png"
+        image: "https://findingtom.com/images/uploads/medium-logo/article-image-00.jpeg"
     },
     {
         id: 10,
@@ -111,7 +111,7 @@ let projects = [
         repolink:
             "",
         image:
-            "",
+            "https://play-lh.googleusercontent.com/3DvHktKyqkn-ZOscfUOrNhOywp9hdwRFr0RhMGLlgV5GuLe-BSXh8OsfjlAHeZ6sbQ=w240-h480-rw",
     }
 ]
 

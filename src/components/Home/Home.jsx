@@ -40,9 +40,10 @@ function Home() {
               terminal.
             </p>
             <div className="mt-8 p-4">
-              <div class="flex w-full items-center space-x-2 md:w-1/3">
+              <div className="flex w-full items-center space-x-2 md:w-1/3">
                 <textarea
                   id="codeBlock"
+                  value={"$ npm create vite@latest"}
                   className="flex h-10 w-full rounded-md border border-black dark:border-white/30 bg-transparent px-3 py-2 text-md placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 font-mono text-black dark:text-white/90 pointer-events-none"
                   readOnly={true}
                 >
@@ -51,7 +52,7 @@ function Home() {
                 <button
                   id="copyButton"
                   type="button"
-                  class="rounded-md bg-gradient-to-r font-mono from-purple-600 to-pink-700 px-3 py-2 text-sm font-semibold text-white/90 shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  className="rounded-md bg-gradient-to-r font-mono from-purple-600 to-pink-700 px-3 py-2 text-sm font-semibold text-white/90 shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   onClick={copyToClipboard}
                 >
                   copy
@@ -94,7 +95,7 @@ function Home() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  class="h-9 w-9 dark:text-gray-100"
+                  className="h-9 w-9 dark:text-gray-100"
                 >
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -120,7 +121,7 @@ function Home() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  class="h-9 w-9 dark:text-gray-100"
+                  className="h-9 w-9 dark:text-gray-100"
                 >
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
@@ -145,7 +146,7 @@ function Home() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  class="h-9 w-9 dark:text-gray-100"
+                  className="h-9 w-9 dark:text-gray-100"
                 >
                   <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
                 </svg>
