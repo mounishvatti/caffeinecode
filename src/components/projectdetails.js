@@ -112,6 +112,15 @@ let projects = [
             "",
         image:
             "https://play-lh.googleusercontent.com/3DvHktKyqkn-ZOscfUOrNhOywp9hdwRFr0RhMGLlgV5GuLe-BSXh8OsfjlAHeZ6sbQ=w240-h480-rw",
+    },
+    {
+        id: 11,
+        name: "Express To-do",
+        description:"A to-do list app built with React.js and express.js (frontend + backend) and postman API testing.",
+        tags: ["react", "express.js"],
+        demolink: "",
+        repolink: "https://github.com/mounishvatti/expresstodo",
+        image: "https://startinfinity.s3.us-east-2.amazonaws.com/production/blog/post/15/main/xXMabYYezGITsPPA8PduAZXEmXvz0Xr71FEQGqy4.png"
     }
 ]
 
