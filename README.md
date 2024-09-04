@@ -4,7 +4,6 @@
 
 </div>
 
-## Vite + React
 ```bash
 $ git clone https://github.com/mounishvatti/caffeinecode.git
 ```
