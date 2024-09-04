@@ -96,7 +96,7 @@ let projects = [
         description:
             "A Blogging website built with React.js and appwrite, shows the usecase of Redux, react-redux, and redux-toolkit.",
         tags: ["react", "redux", "appwrite"],
-        demolink: "blogscafe.vercel.app",
+        demolink: "https://blogscafe.vercel.app/",
         repolink:
             "https://github.com/mounishvatti/blogscafe",
         image: "https://findingtom.com/images/uploads/medium-logo/article-image-00.jpeg"
