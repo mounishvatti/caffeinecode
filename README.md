@@ -4,8 +4,6 @@
 
 </div>
 
-![alt text](image.png)
-
 ## Vite + React
 ```bash
 $ git clone https://github.com/mounishvatti/caffeinecode.git
