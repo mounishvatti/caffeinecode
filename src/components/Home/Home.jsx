@@ -3,21 +3,17 @@ import { useState } from "react";
 import { TbCopy } from "react-icons/tb";
 import { TbCopyCheck } from "react-icons/tb";
 
-
-
 function Home() {
   const [isCopied, setIsCopied] = useState(false);
   function copyToClipboard() {
     setIsCopied(true);
     const codeBlock = document.getElementById("codeBlock").value;
-    navigator.clipboard
-      .writeText(codeBlock)
-      .catch((err) => {
-        console.error("Failed to copy text: ", err);
-      });
-      setTimeout(() => {
-        setIsCopied(false);
-      }, 2000);
+    navigator.clipboard.writeText(codeBlock).catch((err) => {
+      console.error("Failed to copy text: ", err);
+    });
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 2000);
   }
   const handleMouseEnter = (event) => {
     event.currentTarget.play();
@@ -71,16 +67,16 @@ function Home() {
             </div>
           </div>
           <div className="rounded-lg bg-gradient-to-r from-slate-300 to-slate-400 dark:from-slate-100/50 dark:to-slate-200/50 p-2 mb-20">
-            <video 
-            src="https://www.cursor.com/videos/cpp-full-video.mp4"
-            title="code editor video"
-            width="100%"
-            height="100%"
-            loop
-            playsInline
-            style={{border:"none"}}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            <video
+              src="https://www.cursor.com/videos/cpp-full-video.mp4"
+              title="code editor video"
+              width="100%"
+              height="100%"
+              loop
+              playsInline
+              style={{ border: "none" }}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
         </div>
@@ -94,8 +90,8 @@ function Home() {
                 The best way to learn{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-500 to-slate-800">
                   MERN
-                </span>
-                {" "} is by building projects.
+                </span>{" "}
+                is by building projects.
               </h2>
             </div>
             <hr />
