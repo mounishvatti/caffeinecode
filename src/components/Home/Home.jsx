@@ -1,20 +1,23 @@
 // import React from "react";
+import { useState } from "react";
+import { TbCopy } from "react-icons/tb";
+import { TbCopyCheck } from "react-icons/tb";
+
+
 
 function Home() {
+  const [isCopied, setIsCopied] = useState(false);
   function copyToClipboard() {
+    setIsCopied(true);
     const codeBlock = document.getElementById("codeBlock").value;
     navigator.clipboard
       .writeText(codeBlock)
-      .then(() => {
-        const cpbtn = document.getElementById("copyButton");
-        cpbtn.innerHTML = "copied!";
-        setTimeout(() => {
-          cpbtn.innerHTML = "copy";
-        }, 2000);
-      })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
       });
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
   }
   const handleMouseEnter = (event) => {
     event.currentTarget.play();
@@ -59,10 +62,10 @@ function Home() {
                 <button
                   id="copyButton"
                   type="button"
-                  className="rounded-md font-mono bg-black px-3 py-2 text-sm dark:bg-white dark:text-black text-white  shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  className="rounded-md font-mono bg-black px-2 py-2 text-xl dark:bg-white dark:text-black text-white  shadow-sm hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   onClick={copyToClipboard}
                 >
-                  copy
+                  {isCopied ? <TbCopyCheck /> : <TbCopy />}
                 </button>
               </div>
             </div>
