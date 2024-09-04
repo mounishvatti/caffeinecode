@@ -44,12 +44,13 @@ function About() {
                 alt="Mounish Vatti"
                 className="h-[300px] w-full rounded-2xl object-cover "
               />
-              <p className="text-center mt-6 w-full px-2 pb-2 text-xl font-sans font-semibold dark:text-gray-100">
+              <p className="text-center mt-4 w-full px-2 pb-2 text-2xl font-mono font-semibold dark:text-gray-100">
                 Mounish Vatti
               </p>
-              <p className="w-full px-2 pb-6 text-sm font-mono font-semibold dark:text-gray-200 text-center">
-                Aspiring Full Stack Developer
-              </p>
+              <div className="flex justify-center items-center gap-x-4 gap-y-4 mt-2">
+                <button onClick={() => window.open("https://github.com/mounishvatti", "_blank")} className="bg-black text-white rounded-sm px-2 py-1 font-mono font-medium">Github</button>
+                <button onClick={() => window.open("https://linkedin.com/in/mounish-vatti", "_blank")} className="bg-blue-500 text-white rounded-sm px-2 py-1 font-mono font-medium">LinkedIn</button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">

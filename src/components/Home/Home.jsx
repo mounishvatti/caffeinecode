@@ -16,6 +16,13 @@ function Home() {
         console.error("Failed to copy text: ", err);
       });
   }
+  const handleMouseEnter = (event) => {
+    event.currentTarget.play();
+  };
+
+  const handleMouseLeave = (event) => {
+    event.currentTarget.pause();
+  };
   return (
     <>
       <div className="relative w-full dark:bg-black">
@@ -24,16 +31,16 @@ function Home() {
             <div className="mt-10 flex max-w-max items-center space-x-2 rounded-full p-[2px] bg-gradient-to-r from-purple-600 via-purple-800 to-pink-900 dark:from-purple-300 dark:via-purple-400 dark:to-pink-600">
               <div className="flex w-full h-full rounded-full items-center bg-white dark:bg-black p-2">
                 <p className="text-xs font-medium md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-purple-800 to-pink-900   dark:from-purple-300 dark:via-purple-400 dark:to-pink-600">
-                  Create a Vite+React project
+                  Be the best not just better
                   <span className="ml-2 cursor-pointer font-bold">→</span>
                 </p>
               </div>
             </div>
             <h1 className="mt-8 max-w-4xl text-3xl font-bold tracking-tight dark:text-white/90 text-black md:text-4xl lg:text-6xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-800 dark:from-purple-400 dark:to-pink-600">
-                Vite
+                Code
               </span>{" "}
-              is the Next Generation Frontend Tooling
+              is a part of our life and we are here to help you.
             </h1>
             <p className="mt-8 max-w-3xl text-md text-black dark:text-gray-200 font-mono">
               Create a Vite + React app by pasting the following command in your
@@ -60,12 +67,18 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="rounded-xl bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-900/50 dark:to-pink-900/50 p-2 mb-20">
-            <img
-              className="aspect-[16/9] w-full rounded-lg bg-white/10 object-cover lg:aspect-auto lg:object-center"
-              src="https://code.visualstudio.com/assets/home/home-screenshot-mac-2x-v2.png"
-              alt="IDE screenshot"
-            />
+          <div className="rounded-lg bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-900/50 dark:to-pink-900/50 p-2 mb-20">
+            <video 
+            src="https://www.cursor.com/videos/cpp-full-video.mp4"
+            title="code editor video"
+            width="100%"
+            height="100%"
+            loop
+            playsInline
+            style={{border:"none"}}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            ></video>
           </div>
         </div>
         <section className="pb-20">
@@ -77,9 +90,9 @@ function Home() {
               <h2 className="mt-6 text-4xl font-bold leading-tight dark:text-white/80">
                 The best way to learn{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
-                  React.js
+                  MERN
                 </span>
-                {" "}is by building projects.
+                {" "} is by building projects.
               </h2>
             </div>
             <hr />
