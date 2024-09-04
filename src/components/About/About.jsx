@@ -48,8 +48,8 @@ function About() {
                 Mounish Vatti
               </p>
               <div className="flex justify-center items-center gap-x-4 gap-y-4 mt-2">
-                <button onClick={() => window.open("https://github.com/mounishvatti", "_blank")} className="bg-black text-white rounded-sm px-2 py-1 font-mono font-medium">Github</button>
-                <button onClick={() => window.open("https://linkedin.com/in/mounish-vatti", "_blank")} className="bg-blue-500 text-white rounded-sm px-2 py-1 font-mono font-medium">LinkedIn</button>
+                <button onClick={() => window.open("https://github.com/mounishvatti", "_blank")} className="bg-black shadow-md text-white rounded-sm px-2 py-1 font-mono font-medium">Github</button>
+                <button onClick={() => window.open("https://linkedin.com/in/mounish-vatti", "_blank")} className="bg-blue-500 shadow-md text-white rounded-sm px-2 py-1 font-mono font-medium">LinkedIn</button>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ function About() {
               <p className="text-sm font-semibold md:text-base">
                 Join our team →
               </p>
-              <p className="text-3xl font-bold md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 dark:from-purple-200 dark:to-pink-400">
+              <p className="text-3xl font-bold md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-slate-800 dark:from-purple-200 dark:to-pink-400">
                 We&#x27;re just getting started
               </p>
               <p className="text-base dark:text-gray-300 md:text-lg">
@@ -77,7 +77,7 @@ function About() {
               <img
                 src="https://www.cia.gov/the-world-factbook/static/778a257ec6e116fbb7aac018c170b3eb/29f7f/wfb-feature-world.jpg"
                 alt="Getting Started"
-                className="rounded-lg border border-white-200 shadow-md"
+                className="rounded-lg border border-white-200 shadow-md grayscale"
               />
             </div>
           </div>

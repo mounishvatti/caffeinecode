@@ -28,16 +28,16 @@ function Home() {
       <div className="relative w-full dark:bg-black">
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="flex flex-col justify-center px-4 py-10 lg:px-6">
-            <div className="mt-10 flex max-w-max items-center space-x-2 rounded-full p-[2px] bg-gradient-to-r from-purple-600 via-purple-800 to-pink-900 dark:from-purple-300 dark:via-purple-400 dark:to-pink-600">
+            <div className="mt-10 flex max-w-max items-center space-x-2 rounded-full p-[2px] bg-gradient-to-r from-slate-800 to-yellow-900 dark:from-slate-200 dark:to-yellow-600">
               <div className="flex w-full h-full rounded-full items-center bg-white dark:bg-black p-2">
-                <p className="text-xs font-medium md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-purple-800 to-pink-900   dark:from-purple-300 dark:via-purple-400 dark:to-pink-600">
+                <p className="text-xs font-medium md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-200 dark:to-slate-400">
                   Be the best not just better
                   <span className="ml-2 cursor-pointer font-bold">→</span>
                 </p>
               </div>
             </div>
-            <h1 className="mt-8 max-w-4xl text-3xl font-bold tracking-tight dark:text-white/90 text-black md:text-4xl lg:text-6xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-800 dark:from-purple-400 dark:to-pink-600">
+            <h1 className="mt-8 max-w-4xl text-3xl font-bold tracking-tight dark:text-white/90 text-black/80 md:text-4xl lg:text-6xl">
+              <span className="text-transparent font-sans bg-clip-text bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-200 dark:to-yellow-600">
                 Code
               </span>{" "}
               is a part of our life and we are here to help you.
@@ -59,7 +59,7 @@ function Home() {
                 <button
                   id="copyButton"
                   type="button"
-                  className="rounded-md bg-gradient-to-r font-mono from-purple-600 to-pink-700 px-3 py-2 text-sm font-semibold text-white/90 shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  className="rounded-md font-mono bg-black px-3 py-2 text-sm dark:bg-white dark:text-black text-white  shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   onClick={copyToClipboard}
                 >
                   copy
@@ -67,7 +67,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-900/50 dark:to-pink-900/50 p-2 mb-20">
+          <div className="rounded-lg bg-gradient-to-r from-slate-300 to-slate-400 dark:from-slate-100/50 dark:to-slate-200/50 p-2 mb-20">
             <video 
             src="https://www.cursor.com/videos/cpp-full-video.mp4"
             title="code editor video"
@@ -84,12 +84,12 @@ function Home() {
         <section className="pb-20">
           <div className="mx-auto max-w-7xl px-2 lg:px-8">
             <div className="mb-4 max-w-lg">
-              <p className="text-sm font-semibold uppercase tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+              <p className="text-sm font-semibold uppercase tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-slate-900">
                 Projects and many more
               </p>
               <h2 className="mt-6 text-4xl font-bold leading-tight dark:text-white/80">
                 The best way to learn{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-500 to-slate-800">
                   MERN
                 </span>
                 {" "} is by building projects.

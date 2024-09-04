@@ -4,7 +4,7 @@
 function Footer() {
   return (
     <>
-      <section className="relative overflow-hidden py-8 mt-8 bg-gradient-to-r from-purple-500 via-pink-500 to-pink-700">
+      <section className="relative overflow-hidden py-8 mt-8 bg-black/90 dark:bg-white/90">
         <div className="container relative z-10 mx-auto px-4">
           <div className="-m-8 flex flex-wrap items-center justify-between">
             <div className="w-auto p-8">
