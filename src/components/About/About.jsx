@@ -12,7 +12,7 @@ function About() {
               </p>
             </div>
             <p className="text-3xl font-bold dark:text-gray-100 md:text-5xl md:leading-10">
-              Made with love, right here in India
+              Made with love, right here in India 🇮🇳
             </p>
             <p className="max-w-4xl text-base text-gray-600 dark:text-gray-400 md:text-xl font-sans">
               Lets together enrich the developer community with a platform that
@@ -21,13 +21,6 @@ function About() {
               mission is to create a community where developers can thrive and
               achieve their full potential.
             </p>
-          </div>
-          <div className="w-full space-y-4">
-            <img
-              className="h-[200px] w-full rounded-xl object-cover md:h-full"
-              src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/google-map.jpg"
-              alt=""
-            />
           </div>
           <div className="mt-16 flex items-center">
             <div className="space-y-6 md:w-3/4">

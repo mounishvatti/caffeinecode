@@ -35,7 +35,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            <h1 className="mt-8 max-w-4xl text-3xl font-bold tracking-tight dark:text-white/90 text-black/80 md:text-4xl lg:text-6xl">
+            <h1 className="mt-8 max-w-4xl text-3xl font-bold tracking-tight dark:text-white/90 text-black/90 md:text-4xl lg:text-6xl">
               <span className="text-transparent font-sans bg-clip-text bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-200 dark:to-yellow-600">
                 Code
               </span>{" "}

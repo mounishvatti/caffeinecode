@@ -1,6 +1,8 @@
 // import React from 'react'
 import PropTypes from "prop-types";
 const Card = ({ project }) => {
+  const tags = project.tags;
+  console.log(tags);
   return (
     <div
       className="w-[300px] rounded-xl dark:bg-black/85 border border-gray-400 dark:border-white/20"
@@ -19,17 +21,17 @@ const Card = ({ project }) => {
           <span
             className="mb-2 mr-2 inline-block rounded-full px-3 py-1 text-[10px] font-semibold text-white dark:text-gray-900 bg-black dark:bg-purple-100"
           >
-            #React.js
+            {tags[0]}
           </span>
           <span
             className="mb-2 mr-2 inline-block rounded-full px-3 py-1 text-[10px] font-semibold text-white dark:text-gray-900 bg-black dark:bg-purple-100"
           >
-            #hooks
+            {tags[1]}
           </span>
           <span
             className="mb-2 mr-2 inline-block rounded-full px-3 py-1 text-[10px] font-semibold text-white dark:text-gray-900 bg-black dark:bg-purple-100"
           >
-            #Learn
+            {tags[2]}
           </span>
         </div>
         <div className="flex justify-center gap-2">
