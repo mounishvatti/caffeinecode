@@ -117,10 +117,19 @@ let projects = [
         id: 11,
         name: "Express To-do",
         description:"A to-do list app built with React.js and express.js (frontend + backend) and postman API testing.",
-        tags: ["react", "express.js"],
+        tags: ["react", "express.js", "postman"],
         demolink: "",
         repolink: "https://github.com/mounishvatti/expresstodo",
         image: "https://startinfinity.s3.us-east-2.amazonaws.com/production/blog/post/15/main/xXMabYYezGITsPPA8PduAZXEmXvz0Xr71FEQGqy4.png"
+    },
+    {
+        id: 12,
+        name: "Auth using JWTs",
+        description:"A basic authentication Login/Signup app built with HTML and express.js (frontend + backend) and postman API testing.",
+        tags: ["jwt", "express.js", "postman"],
+        demolink: "",
+        repolink: "https://github.com/mounishvatti/authusingjwt",
+        image: "https://ssojet.com/blog/navigating-the-world-of-jwt-a-comprehensive-guide/jwt.jpg"
     }
 ]
 

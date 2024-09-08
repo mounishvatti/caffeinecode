@@ -11,9 +11,9 @@ function Projects() {
       <div className="dark:bg-black/95">
         <div className="flex justify-center pb-8 w-full">
           <h1 className="text-5xl font-bold pt-16 text-center dark:text-white/90">
-            Learn{" "}
-            <span id="reactname" style={{ color: "rgb(117, 194, 217)" }}>
-              React.js
+            Be a{" "}
+            <span id="reactname" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-500 to-slate-800">
+              100xDeveloper
             </span>{" "}
             by building projects.
           </h1>
