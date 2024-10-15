@@ -111,7 +111,7 @@ let projects = [
         repolink:
             "",
         image:
-            "https://play-lh.googleusercontent.com/3DvHktKyqkn-ZOscfUOrNhOywp9hdwRFr0RhMGLlgV5GuLe-BSXh8OsfjlAHeZ6sbQ=w240-h480-rw",
+            "https://miro.medium.com/v2/resize:fit:1400/1*-1pIJfegO1srtM4ieQ1WIw.png",
     },
     {
         id: 11,
@@ -130,6 +130,15 @@ let projects = [
         demolink: "",
         repolink: "https://github.com/mounishvatti/authusingjwt",
         image: "https://ssojet.com/blog/navigating-the-world-of-jwt-a-comprehensive-guide/jwt.jpg"
+    },
+    {
+        id: 13,
+        name: "Course selling app",
+        description: "A fullstack course selling application where users can login and purchase courses of their choice along with admin gateway.",
+        tags: ["react", "express.js", "mongodb", "jwt"],
+        demolink: "",
+        repolink: "https://github.com/mounishvatti/coursera",
+        image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1"
     }
 ]
 
