@@ -1,7 +1,8 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="relative overflow-hidden py-8 mt-8 bg-black/90 dark:bg-white/90">
@@ -81,6 +82,13 @@ function Footer() {
                       </svg>
                     </div>
                   </a>
+                </div>
+                <div className="flex items-center justify-center pl-4 underline text-white text-sm font-medium">
+                  <Link
+                    navigate = "/login" 
+                  >
+                    admin login
+                  </Link>
                 </div>
               </div>
             </div>
