@@ -1,6 +1,5 @@
 import React from "react";
 import SearchBar from "/src/components/Projects/SearchBar.jsx";
-import { FaSearch } from "react-icons/fa";
 import projects from "/src/components/projectdetails.js";
 import ProjectsWrap from "/src/components/Projects/ProjectsWrap.jsx";
 

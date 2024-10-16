@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 const Card = ({ project }) => {
   const tags = project.tags;
-  console.log(tags);
+  //console.log(tags);
   return (
     <div
       className="w-[300px] rounded-xl dark:bg-black/85 border border-gray-400 dark:border-white/20"
