@@ -66,7 +66,7 @@ let projects = [
         demolink: "https://reactrouter-sigma.vercel.app",
         repolink: "https://github.com/mounishvatti/reactrouter",
         image:
-            "https://miro.medium.com/v2/resize:fit:719/1*1oP_IQI1jHei58EV-V5y8A.png",  
+            "https://www.scaler.com/topics/images/react-router-thumbnail.webp",  
     },
     {
         id: 7,

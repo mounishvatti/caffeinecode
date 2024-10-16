@@ -8,7 +8,7 @@ import ProjectsWrap from "/src/components/Projects/ProjectsWrap.jsx";
 function Projects() {
   return (
     <>
-      <div className="dark:bg-black/95">
+      <div className="dark:bg-black/95 bg-black/5 h-full w-full">
         <div className="flex justify-center pb-8 w-full">
           <h1 className="text-5xl font-bold pt-16 text-center dark:text-white/90">
             Be a{" "}
