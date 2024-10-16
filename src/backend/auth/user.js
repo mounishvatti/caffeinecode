@@ -151,6 +151,7 @@ userRouter.post("/signout", userMiddleware, (req, res) => {
   res.json({ message: "Logged out successfully" });
 });
 
+// user can view all the blogs without signing in 
 userRouter.get("/blogs", async (req, res) => {
   try {
     const blogs = await blogModel.find();
@@ -161,6 +162,7 @@ userRouter.get("/blogs", async (req, res) => {
   }
 });
 
+// user can search for blogs without signing in 
 userRouter.get("/blogs/:id", async (req, res) => {
   try {
     const blog = await blogModel.findById(req.params.id);
@@ -173,6 +175,9 @@ userRouter.get("/blogs/:id", async (req, res) => {
     res.status(500).json({ message: "Error fetching blog" });
   }
 });
+
+
+// but to post/edit/delete any blog he has to sign in and then only he can post/edit/delete any blog
 
 userRouter.post("/blogs", userMiddleware, async (req, res) => {
   try {
@@ -188,6 +193,28 @@ userRouter.post("/blogs", userMiddleware, async (req, res) => {
     }
     console.log(error);
     res.status(500).json({ message: "Error creating blog" });
+  }
+});
+
+userRouter.put("/blogs/:id", async (req, res) => {
+  try {
+    const validatedData = blogSchema.parse(req.body);
+    const blog = await blogModel.findByIdAndUpdate(req.params.id, validatedData, {
+      new: true,
+    });
+    if (!blog) {
+      return res.status(404).json({ message: "Blog not found" });
+    }
+    res.json(blog);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return res.status(400).json({
+        message: "Validation failed",
+        errors: error.errors,
+      });
+    }
+    console.log(error);
+    res.status(500).json({ message: "Error updating blog" });
   }
 });
 
