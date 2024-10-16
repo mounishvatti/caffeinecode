@@ -27,7 +27,7 @@ let projects = [
         id: 3,
         name: "Password generator",
         description:
-            "Shows the usecase of useState, useCallback, useEffect, and useRef hooks.",
+            "A password generator app shows the usecase of useState, useCallback, useEffect, and useRef hooks.",
         tags: ["useState", "useCallback", "useEffect", "useRef"],
         demolink: "https://passwordgenerator-six-psi.vercel.app/",
         repolink:
@@ -50,7 +50,7 @@ let projects = [
         id: 5,
         name: "SIP Calculator",
         description:
-            "An SIP returns (₹) calculator app built with React.js using various hooks and chart.js.",
+            "An SIP returns (₹) calculator app built with React.js using chart.js. Multiple options like lumpsum and topup",
         tags: ["react", "hooks", "chart.js"],
         demolink: "https://sipreturncalc.vercel.app",
         repolink: "https://github.com/mounishvatti/sipreturncalc",
@@ -61,7 +61,7 @@ let projects = [
         id: 6,
         name: "React Router",
         description:
-            "Using React Router Dom to navigate between different pages from the address bar.",
+            "Using React Router Dom to navigate between different pages from the address bar (routing in react).",
         tags: ["react", "react-router-dom", "github API"],
         demolink: "https://reactrouter-sigma.vercel.app",
         repolink: "https://github.com/mounishvatti/reactrouter",

@@ -1,0 +1,1 @@
+// No need to login for user as a user can view and read blogs irrespective of if he logins or not
