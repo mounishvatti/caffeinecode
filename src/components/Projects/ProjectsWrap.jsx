@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "/src/components/Card.jsx";
-import projects from "/src/components/projectdetails.js";
 
 const ProjectsWrap = ({ projects }) => {
   return (

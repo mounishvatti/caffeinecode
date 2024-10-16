@@ -23,7 +23,9 @@ function Footer() {
                       fill="white"
                     ></path>
                   </svg>
-                  <span className="ml-4 text-lg text-white font-bold">CaffeineCode</span>
+                  <span className="ml-4 text-lg text-white font-bold">
+                    CaffeineCode
+                  </span>
                 </div>
               </a>
             </div>
@@ -84,11 +86,7 @@ function Footer() {
                   </a>
                 </div>
                 <div className="flex items-center justify-center pl-4 underline text-white text-sm font-medium">
-                  <Link
-                    navigate = "/login" 
-                  >
-                    admin login
-                  </Link>
+                  <Link navigate="/login">admin login</Link>
                 </div>
               </div>
             </div>
