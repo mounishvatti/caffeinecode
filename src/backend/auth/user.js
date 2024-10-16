@@ -1,13 +1,15 @@
+// No need to login for user as a user can view and read blogs irrespective of if he logins or not
+
 import { Router } from "express";
-import { adminModel, blogModel } from "src/components/Blogs/db.js";
+import { userModel, blogModel } from "src/backend/database/db.js";
 import jwt from "jsonwebtoken";
 import { z } from "zod";
 import bcrypt from "bcrypt";
-import { adminMiddleware } from "../middlewares/admin.js";
+import { userMiddleware } from "../middlewares/user.js";
 import dotenv from "dotenv";
 dotenv.config();
 
-const adminRouter = Router();
+const userRouter = Router();
 
 const signupSchema = z.object({
   email: z.string().email({ message: "Invalid email address" }),
@@ -30,7 +32,7 @@ const signupSchema = z.object({
     .min(2, { message: "Last name must be at least 2 characters" }),
 });
 
-const courseSchema = z.object({
+const blogSchema = z.object({
   title: z.string().min(2, { message: "Title must be at least 2 characters" }),
   description: z
     .string()
@@ -45,7 +47,7 @@ const signinSchema = z.object({
   password: z.string(),
 });
 
-adminRouter.post("/signup", async function (req, res) {
+userRouter.post("/signup", async function (req, res) {
   try {
     // First validate the input using Zod schema
     const validatedData = signupSchema.parse(req.body);
@@ -63,7 +65,7 @@ adminRouter.post("/signup", async function (req, res) {
     // If admin doesn't exist, hash the password and create a new admin
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    await adminModel.create({
+    await userModel.create({
       email: email,
       password: hashedPassword,
       firstName: firstName,
@@ -90,18 +92,18 @@ adminRouter.post("/signup", async function (req, res) {
   }
 });
 
-adminRouter.post("/signin", async function (req, res) {
+userRouter.post("/signin", async function (req, res) {
   try {
     // Validate the input
     const { email, password } = signinSchema.parse(req.body);
 
     // Find the admin by email
-    const admin = await adminModel.findOne({ email: email });
+    const user = await userModel.findOne({ email: email });
     if (!admin) {
       return res.status(404).json({ message: "Admin not found" });
     } else {
       // Compare the passwords
-      bcrypt.compare(password, admin.password, (err, result) => {
+      bcrypt.compare(password, user.password, (err, result) => {
         if (err) {
           console.log(err);
           return res.status(500).json({ message: "Error comparing passwords" });
@@ -111,8 +113,8 @@ adminRouter.post("/signin", async function (req, res) {
         } else {
           const token = jwt.sign(
             { id: admin._id.toString() },
-            process.env.JWT_ADMIN_PASSWORD,
-            { expiresIn: "2h" }
+            process.env.JWT_USER_PASSWORD,
+            { expiresIn: "10h" }
           );
 
           res.cookie("token", token, {
@@ -122,8 +124,7 @@ adminRouter.post("/signin", async function (req, res) {
           });
 
           res.send({
-            message: "Admin logged in successfully",
-            JWT: token,
+            message: "User logged in successfully",
           });
         }
       });
@@ -145,7 +146,60 @@ adminRouter.post("/signin", async function (req, res) {
   }
 });
 
-adminRouter.post("/signout", adminMiddleware, (req, res) => {
+userRouter.post("/signout", userMiddleware, (req, res) => {
   res.clearCookie("token");
   res.json({ message: "Logged out successfully" });
+});
+
+userRouter.get("/blogs", async (req, res) => {
+  try {
+    const blogs = await blogModel.find();
+    res.json(blogs);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "Error fetching blogs" });
+  }
+});
+
+userRouter.get("/blogs/:id", async (req, res) => {
+  try {
+    const blog = await blogModel.findById(req.params.id);
+    if (!blog) {
+      return res.status(404).json({ message: "Blog not found" });
+    }
+    res.json(blog);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "Error fetching blog" });
+  }
+});
+
+userRouter.post("/blogs", userMiddleware, async (req, res) => {
+  try {
+    const validatedData = blogSchema.parse(req.body);
+    const blog = await blogModel.create(validatedData);
+    res.json(blog);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return res.status(400).json({
+        message: "Validation failed",
+        errors: error.errors,
+      });
+    }
+    console.log(error);
+    res.status(500).json({ message: "Error creating blog" });
+  }
+});
+
+userRouter.delete("/blogs/:id", async (req, res) => {
+    try {
+        const blog = await blogModel.findByIdAndDelete(req.params.id);
+        if (!blog) {
+        return res.status(404).json({ message: "Blog not found" });
+        }
+        res.json(blog);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: "Error deleting blog" });
+    }
 });
