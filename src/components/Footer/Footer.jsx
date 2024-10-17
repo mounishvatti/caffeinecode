@@ -85,8 +85,8 @@ function Footer() {
                     </div>
                   </a>
                 </div>
-                <div className="flex items-center justify-center pl-4 underline text-white text-sm font-medium">
-                  <Link navigate="/login">admin login</Link>
+                <div className="flex items-center justify-center pl-4 text-white text-sm font-medium">
+                  <Link navigate="/login" className="underline">admin login</Link>
                 </div>
               </div>
             </div>

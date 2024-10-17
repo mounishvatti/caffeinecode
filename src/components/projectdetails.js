@@ -88,7 +88,7 @@ let projects = [
         demolink: "",
         repolink:
             "https://github.com/mounishvatti/reduxtoolkittodoapp",
-        image: "https://play-lh.googleusercontent.com/JkYolPNuRAlrXEI9vlk-XOid3VFJ0IPjDj2eM_xrriuE3Zu8IX9cuMkI7JOTw1upNxbW"
+        image: "https://cdn.dribbble.com/userupload/6478950/file/original-0c9bd37677dd79d495694d83d79da7f8.png?resize=400x300"
     },
     {
         id: 9,

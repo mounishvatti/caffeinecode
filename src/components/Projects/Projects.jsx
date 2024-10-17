@@ -7,11 +7,11 @@ import ProjectsWrap from "/src/components/Projects/ProjectsWrap.jsx";
 function Projects() {
   return (
     <>
-      <div className="dark:bg-black/95 bg-black/5 h-full w-full">
+      <div className="dark:bg-black/95 h-full w-full">
         <div className="flex justify-center pb-8 w-full">
-          <h1 className="text-5xl font-bold pt-16 text-center dark:text-white/90">
+          <h1 className="text-5xl font-bold pt-16 text-center dark:text-white/90 text-pink-100">
             Be a{" "}
-            <span id="reactname" className="text-transparent bg-clip-text bg-gradient-to-r from-slate-500 to-slate-800">
+            <span id="reactname" className="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 to-pink-400">
               100xDeveloper
             </span>{" "}
             by building projects.

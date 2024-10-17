@@ -11,10 +11,10 @@ function About() {
                 About Us →
               </p>
             </div>
-            <p className="text-3xl font-bold dark:text-gray-100 md:text-5xl md:leading-10">
+            <p className="text-3xl font-bold text-gray-100 md:text-5xl md:leading-10">
               Made with love, right here in India 🇮🇳
             </p>
-            <p className="max-w-4xl text-base text-gray-600 dark:text-gray-400 md:text-xl font-sans">
+            <p className="max-w-4xl text-base text-gray-300 md:text-xl font-sans">
               Lets together enrich the developer community with a platform that
               encourages collaboration and innovation. We believe that the best
               learning experience is one that is both fun and rewarding. Our
@@ -24,7 +24,7 @@ function About() {
           </div>
           <div className="mt-16 flex items-center">
             <div className="space-y-6 md:w-3/4">
-              <p className="text-3xl font-bold dark:text-gray-100 md:text-4xl">
+              <p className="text-3xl font-bold text-gray-100 md:text-4xl">
                 Meet our team
               </p>
               <div></div>
@@ -37,12 +37,12 @@ function About() {
                 alt="Mounish Vatti"
                 className="h-[300px] w-full rounded-2xl object-cover "
               />
-              <p className="text-center mt-4 w-full px-2 pb-2 text-2xl font-mono font-semibold dark:text-gray-100">
+              <p className="text-center mt-4 w-full px-2 pb-2 text-2xl font-mono font-semibold text-gray-100">
                 Mounish Vatti
               </p>
               <div className="flex justify-center items-center gap-x-4 gap-y-4 mt-2">
                 <button onClick={() => window.open("https://github.com/mounishvatti", "_blank")} className="bg-black shadow-md text-white rounded-sm px-2 py-1 font-mono font-medium">Github</button>
-                <button onClick={() => window.open("https://linkedin.com/in/mounish-vatti", "_blank")} className="bg-blue-500 shadow-md text-white rounded-sm px-2 py-1 font-mono font-medium">LinkedIn</button>
+                <button onClick={() => window.open("https://linkedin.com/in/mounish-vatti", "_blank")} className="bg-blue-700 shadow-md text-white rounded-sm px-2 py-1 font-mono font-medium">LinkedIn</button>
               </div>
             </div>
           </div>
@@ -51,10 +51,10 @@ function About() {
               <p className="text-sm font-semibold md:text-base">
                 Join our team →
               </p>
-              <p className="text-3xl font-bold md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-slate-800 dark:from-purple-200 dark:to-pink-400">
+              <p className="text-3xl font-bold md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-200 to-pink-300 dark:from-purple-200 dark:to-pink-400">
                 We&#x27;re just getting started
               </p>
-              <p className="text-base dark:text-gray-300 md:text-lg">
+              <p className="text-base text-gray-300 md:text-lg">
                 Our philosophy is simple — hire a team of diverse, passionate
                 people and foster a culture that empowers you to do your best
                 work.
@@ -70,7 +70,7 @@ function About() {
               <img
                 src="https://www.cia.gov/the-world-factbook/static/778a257ec6e116fbb7aac018c170b3eb/29f7f/wfb-feature-world.jpg"
                 alt="Getting Started"
-                className="rounded-lg border border-white-200 shadow-md grayscale"
+                className="rounded-lg border border-white/20 shadow-md grayscale"
               />
             </div>
           </div>
