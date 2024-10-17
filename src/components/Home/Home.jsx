@@ -29,9 +29,8 @@ function Home() {
           <div className="flex flex-col justify-center px-4 py-10 lg:px-6">
             <div className="mt-10 flex max-w-max items-center space-x-2 rounded-full p-[2px] bg-gradient-to-r from-pink-200 to-pink-900 dark:from-slate-200 dark:to-yellow-600">
               <div className="flex w-full h-full rounded-full items-center bg-black p-2">
-                <p className="text-xs font-medium text-pink-200 md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-200 dark:to-slate-400">
-                  Be the best not just better
-                  <span className="ml-2 cursor-pointer font-bold">→</span>
+                <p className="text-xs font-medium text-pink-200 md:text-sm">
+                  Be a 100xDeveloper
                 </p>
               </div>
             </div>
