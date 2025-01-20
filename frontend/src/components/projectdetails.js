@@ -137,8 +137,26 @@ let projects = [
         description: "A fullstack course selling application where users can login and purchase courses of their choice along with admin gateway.",
         tags: ["react", "express.js", "mongodb", "jwt"],
         demolink: "",
-        repolink: "https://github.com/mounishvatti/coursera",
+        repolink: "https://github.com/mounishvatti/cms",
         image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1"
+    },
+    {
+        id: 14,
+        name: "rupay - Payments app",
+        description: "A fullstack payments application where users can login and make payments.",
+        tags: ["next.js", "tailwind", "redux", "prisma"],
+        demolink: "",
+        repolink: "https://github.com/mounishvatti/rupay",
+        image: "https://res.cloudinary.com/slicepay/image/upload/v1718021209/website/sliceit-v3/images/desktop/og_Image.png",
+    },
+    {
+        id: 15,
+        name: "excalidraw - Collaborative whiteboard",
+        description: "A collaborative whiteboard application where users can draw",
+        tags: ["turborepo", "websockets", "prisma", "tailwind"],
+        demolink: "",
+        repolink: "https://github.com/mounishvatti/excalidraw",
+        image: "https://excalidraw.com/og-image-3.png",
     }
 ]
 
