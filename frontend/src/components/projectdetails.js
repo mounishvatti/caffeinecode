@@ -143,7 +143,7 @@ let projects = [
     {
         id: 14,
         name: "rupay - Payments app",
-        description: "A fullstack payments application where users can login and make payments.",
+        description: "A fullstack payments application where users can login and make payments to each other.",
         tags: ["next.js", "tailwind", "redux", "prisma"],
         demolink: "",
         repolink: "https://github.com/mounishvatti/rupay",
@@ -152,7 +152,7 @@ let projects = [
     {
         id: 15,
         name: "excalidraw - Collaborative whiteboard",
-        description: "A collaborative whiteboard application where users can draw",
+        description: "A collaborative whiteboard application where users can draw different shapes",
         tags: ["turborepo", "websockets", "prisma", "tailwind"],
         demolink: "",
         repolink: "https://github.com/mounishvatti/excalidraw",
